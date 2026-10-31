@@ -45,12 +45,12 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     borderRadius: 32,
     padding: 16,
-    // I decided to use a general margin instead of only marginTop, so that it actually looks like a card and not just a text box
-    margin: 24,
+    marginTop: 24,
   },
   parent: {
     flexDirection: "row",
     justifyContent: "space-between",
+    // width = 80% of the parent container, so that there is space to distribute between the boxes, see figure 7 description
     gap: 8,
   },
   box: {
@@ -63,5 +63,5 @@ const styles = StyleSheet.create({
     height: 100,
     backgroundColor: "#4e98d9",
     flex: 1,
-  }
+  },
 });
